@@ -24,9 +24,6 @@ class CKPT_Manager:
         if by_score:
             file_name = lines[0].split(' ')[0]
         else:
-            # file_names = [line.split(' ')[0] for line in lines]
-            # file_names.sort()
-            # file_name = file_names[-1]
             file_name = lines[-1].split(' ')[0]
 
         file_path = os.path.join(self.root_dir, file_name)
